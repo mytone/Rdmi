@@ -1,0 +1,49 @@
+﻿@page "/"
+@inject NavigationManager navi
+
+
+<Layout IsFixedHeader="true">
+
+    <Header>
+        <h1>Hello, world!</h1>
+    </Header>
+
+    <Main>
+        Welcome to your new app.
+
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+        <SurveyPrompt Title="How is Blazor working for you?" />
+
+    </Main>
+
+    <Footer>
+        <a href="/Counter/mytone">kkkk</a>
+        <Button Color="Color.Primary" Icon="fa-solid fa-font-awesome" Text="测试" OnClick="Adddeal" />
+    </Footer>
+
+</Layout>
+
+
+
+
+
+
+
+
+
+
+
+@code{
+
+    private void Adddeal()
+    {
+        navi.NavigateTo("/Counter/mytone");
+    }
+
+
+}
